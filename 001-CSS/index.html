@@ -1,0 +1,116 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning CSS</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style type="text/css">
+    .large {
+        font-size:300%;
+    }
+    #green {
+        color:green;
+    }
+
+    .green {
+        color:green;
+    }
+
+    .red {
+        color:red;
+    }
+
+    .underline {
+        text-decoration:underline;
+    }
+
+    .blink {
+        text-decoration:blink;
+    }
+
+    .line_through {
+        text-decoration: line-through;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .blue_box {
+        background-color:blue;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .red_box {
+        background-color:red;
+        width: 200px;
+        height: 200px;
+    }
+
+    .purple_box {
+       background-color:#A987CC;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        left: 100px;
+        top: 100px;
+        z-index: 1;
+        margin:0px;
+        padding:0px;
+    }
+
+    .p1 {
+        position: relative;
+        z-index: 3;
+        height: 200px;
+
+    }
+
+    .float_left {
+        float: left;
+    }
+
+    .float_right {
+        float: right;
+    }
+
+
+    .clear_float {
+        clear: both;
+    }
+
+    p {
+        margin:0px;
+        padding: 10px;
+   }
+
+}
+
+</style>
+
+</head>
+
+<body>
+    <div class="purple_box ">
+        <p class=" line_through green float_right">This is the wrong text.</p>
+    </div>
+
+    <div class="blue_box ">
+        <p id="green" class=" bold float_right">This is the correct text.</p>
+    </div>
+
+    <div class="clear_float"></div>
+
+    <div class="p1">
+        <p>The third <span class="underline large">word</span> in this paragraph is underlined.</p>
+    </div>
+
+</body>
+</html>
