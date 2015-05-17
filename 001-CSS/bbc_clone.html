@@ -1,0 +1,241 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>BBC Clone</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style type="text/css">
+    #top_bar {
+        background-color: #7a0000;
+        width: 100%;
+        height: 45px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #second_bar {
+        background-color: #960C0A;
+        width: 100%;
+        height: 100px;
+        margin: 0px;
+        padding: -1px;
+    }
+
+    .fix_width {
+        width: 1050px;
+        margin: 0 auto; 
+        padding: 0;
+        color: white;
+        font-family:  arial;
+        font-size: 0.8em;
+     }
+
+     #bbc_logo {
+        padding-top: 12px; 
+        float: left;
+        border-right: 1px solid #990000;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+
+    #bbc_logo img {
+        height: 20px; 
+    }
+
+     #signin_logo {
+        padding: 7px 90px 6px 20px;
+        border-right: 1px solid #990000;
+        float: left;
+    }
+
+    #signin_logo img {
+        position: relative;
+        top: 7px;
+        height: 15px; 
+    }
+
+    #signin_logo p {
+        position: relative;
+        left:20px;
+        top:-12px;
+        margin: 0px;
+        font-family:  arial;
+   }
+
+   #top_menu {
+    float: left;
+   }
+
+   #top_menu ul {
+    padding: 0;
+    margin: 0;
+   }
+
+   #bottom_menu {
+    float: left;
+   }
+
+   #bottom_menu ul {
+    padding: 0px 0px 0px 0px;
+    margin:  15px 0px 0px 0px;
+    background-color: #5d272f;
+    height: 25px; 
+    width: 100%
+   }
+
+   #top_menu li{
+    list-style: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    float: left;
+    border-right: 1px solid #990000;
+    padding: 15px 20px 17px 20px;
+    height: 100%;
+   }
+
+   #bottom_menu li{
+    list-style: none;
+    font-weight: bold;
+    font-size: 0.79em;
+    float: left;
+    border-right: 1px solid #990000;
+    padding: 0px 15px;
+    height: 60%;
+    margin: 6px 0px 0px 0px;
+   }
+
+   .selected {
+     background-color: #ededed;
+     color: #666666;
+     padding-top: 3px !important;
+     padding-bottom: 5px !important;
+     position: relative;
+     top: -3px;
+    }
+
+   #search_bar {
+    padding: 11px 9px 12px 10px;
+     float: left;
+   }
+   #search_bar input {
+    padding-left: 3px;
+    float: left;
+    background-image: url("images/magnifying_glass.png");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 98% 25%;
+   }
+
+   #news_header {
+    font-size: 36px;
+    padding-top: 18px;
+    margin: 0;
+   }
+   
+   .fix_width  p {
+        margin: 0;
+        padding: 0; 
+
+   }
+   #second_bar p {
+       margin: 0;
+      float: left;
+   }
+
+   #uk_span {
+        padding-left: 25px;
+       font-size: 25px;
+   }
+
+   #rss_text {
+    float: right;
+    padding-top: 42px; 
+    padding-right: 5px;
+   }
+   
+   #rss_logo {
+    float: right;
+    padding-top: 42px; 
+    height: 16px;
+   }
+
+   .clear_flow {
+        clear: both; 
+        margin-top: 0;
+        padding: 0;
+   }
+
+
+
+    body {
+        margin: 0px;
+    }
+   
+
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="top_bar">
+            <div class="fix_width">
+                <div id="bbc_logo">
+                    <img  id="bbc_logo-1" src="images/bbc_logo_small.png"> 
+                </div>
+                <div id="signin_logo">
+                    <img  src="images/signin_logo.png"> <p>Sigin In</p>
+                </div>
+                <div id="top_menu">
+                    <ul>
+                        <li>News</li>
+                        <li>Sports</li>
+                        <li>Weather</li>
+                        <li>iPlayer</li>
+                        <li>TV</li>
+                        <li>Radio</li>
+                        <li>More...</li>
+                   </ul>
+                </div>
+                <div id="search_bar">
+                    <input type="text" placeholder="Search" />
+                </div>
+            </div>
+       </div>
+       <div class="clear_flow"></div>
+        <div id="second_bar">
+            <div class="fix_width">
+                <div>
+                     <p id="news_header">NEWS<span id="uk_span">UK</span></p>
+                     <img id="rss_logo"src="images/rss_logo.png">
+                     <div id="rss_text">RSS</div>
+                     <div class="clear_flow"></div>
+                 </div>
+                 <div id="bottom_menu">
+                    <ul>
+                        <li>Home</li>
+                        <li>World</li>
+                        <li class="selected">UK</li>
+                        <li>England</li>
+                        <li>N. Irland</li>
+                        <li>Scotland</li>
+                        <li>Wales</li>
+                        <li>Business</li>
+                        <li>Politics</li>
+                        <li>Health</li>
+                        <li>Education</li>
+                        <li>Sci/Environment</li>
+                        <li>Tecnology</li>
+                        <li>Entertaiment  &  Arts</li>
+                    </ul>
+                 </div>
+            </div>
+        </div>
+    </div>
+ 
+</body>
+</html>
